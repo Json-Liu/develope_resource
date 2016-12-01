@@ -5,14 +5,14 @@ MYSQL 开发常用命令集锦
 ---------------------------------
 
 *  新增字段
-  > ALTER TABLE table_name ADD new_column column_type  DEFAULT default_value NOT NULL COMMENT '注释'
+> ALTER TABLE table_name ADD new_column column_type  DEFAULT default_value NOT NULL COMMENT '注释'
 * 修改字段信息
-  > ALTER TABLE table_name MODIFY column column_type  COMMENT '注释'
+> ALTER TABLE table_name MODIFY column column_type  COMMENT '注释'
 * 增加索引
-  > 普通索引：ALTER TABLE table_name ADD INDEX index_name (column_list)   
-  > 唯一索引：ALTER TABLE table_name ADD UNIQUE (column_list)
+> 普通索引：ALTER TABLE table_name ADD INDEX index_name (column_list)   
+> 唯一索引：ALTER TABLE table_name ADD UNIQUE (column_list)
 * 删除索引
-  > ALTER TABLE table_name DROP INDEX index_name
+> ALTER TABLE table_name DROP INDEX index_name
 
 ****
 
