@@ -4,7 +4,7 @@
 
   > 此命令可以查询出当前服务器上 CPU 占用率从高到低的进程信息包含以及进程对应的路径
   >
-  > 友情链接：http://www.cnblogs.com/peida/archive/2012/12/24/2831353.html
+  > 友情链接：http://www.cnblogs.com/peida/archive/2012/12/24/2831353.html
   
 第二步
 ------------
