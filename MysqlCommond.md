@@ -32,15 +32,15 @@ MYSQL 开发常用命令集锦
 
 常用函数
 ------------------------------
-> 计数    ->   count(1)
-> 求某一列的和    ->  sum(colunm_name)
-> 将 LONG 型时间转换为 DATE_TIME ->    FROM_UNIXTIME( long_time / 1000 )
-> 将时间转换为指定格式    ->  DATE_FORMAT(date,format)
+* 计数    ->   count(1)
+* 求某一列的和    ->  sum(colunm_name)
+* 将 LONG 型时间转换为 DATE_TIME ->    FROM_UNIXTIME( long_time / 1000 )
+* 将时间转换为指定格式    ->  DATE_FORMAT(date,format)
 >
 > > Exp:DATE_FORMAT(date,'%Y-%m-%d %H:%i:%s')   2016-12-01 17:55:55
 > > 其他配置参考:http://www.w3school.com.cn/sql/func_date_format.asp
 >
-> 在命令行查询数据时各列分行显示   ->  SQL查询语句 + \G           
+* 在命令行查询数据时各列分行显示   ->  SQL查询语句 + \G           
 >
 > > Exp: select * from test \G  
 
