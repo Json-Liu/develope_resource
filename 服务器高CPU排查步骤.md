@@ -3,7 +3,9 @@
 * 利用 top -c 命令
 
   > 此命令可以查询出当前服务器上 CPU 占用率从高到低的进程信息包含以及进程对应的路径
-
+  >
+  > 友情链接：http://www.cnblogs.com/peida/archive/2012/12/24/2831353.html
+  
 第二步
 ------------
 * 利用 ps 命令
@@ -11,6 +13,9 @@
   > ps -mp PID(进程ID) -o THREAD,tid,time 
   >
   > 此命令可以查询 PID 对应的进程中的线程 CPU 占用率情况，线程ID等，找到高CPU的线程ID
+  >
+  > 友情链接 : http://www.cnblogs.com/peida/archive/2012/12/19/2824418.html
+  
 
 第三步
 -------------
