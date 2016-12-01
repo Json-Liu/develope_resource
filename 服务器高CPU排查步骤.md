@@ -27,7 +27,7 @@
   > 切换到超级用户 在 www-data 用户状态利用 jstack 命令查询线程情况。
   >
   > 切记不可直接用 jstack -F 打印，因为 jstack -F 命令会导致系统的所有线程停止而进行 threaddump .
-  >
-  > 
+  >
+  >
   >
  
