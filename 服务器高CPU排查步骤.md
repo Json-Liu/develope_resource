@@ -28,6 +28,6 @@
   >
   > 切记不可直接用 jstack -F 打印，因为 jstack -F 命令会导致系统的所有线程停止而进行 threaddump .
   >
-  > 原因：http://grepcode.com/file/repository.grepcode.com/java/root/jdk/openjdk/7-b147/sun/tools/jstack/JStack.java
+  > 原因：
   >
  
