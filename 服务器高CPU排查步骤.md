@@ -17,8 +17,9 @@
 第四步
 -------------
 * 利用 jstack 命令查看进程内线程信息
+
   > sudo -s  切换到超级用户
-  > sudo -u www-data jstack <pid> 
+  > sudo -u www-data jstack <pid> | grep <tid> -A 30
   > 切换到超级用户 在 www-data 用户状态利用 jstack 命令查询线程情况。
   > 切记不可直接用 jstack -F 打印，因为 jstack -F 命令会导致系统的所有线程停止而进行 threaddump  
   > 原因：http://grepcode.com/file/repository.grepcode.com/java/root/jdk/openjdk/7-b147/sun/tools/jstack/JStack.java
