@@ -19,11 +19,11 @@ MYSQL 开发常用命令集锦
 表信息查询
 -----------------------------
 * 查看表结构
-  >desc table_name 
+    desc table_name 
 * 查看表创建语句
-  >SHOW CREATE TABLE  table_name
+    SHOW CREATE TABLE  table_name
 * 已存在表->查看索引
-  >show index from table_name;
+    show index from table_name;
 
 ****
 
