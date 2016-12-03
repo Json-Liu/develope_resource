@@ -62,13 +62,13 @@ MYSQL 开发常用命令集锦
 >
 > > mysql -h {host} -u {user_name} -p {password} < {absolute_filepath}
 >
->
+
 * 已连接数据的情况下导入数据,此时命令提示符为 mysql>
 
 >
 > > source {absolute_filepath}
 >
->
+
 * 根据 SQL 语句将查询结果导出到指定路径
 
 >
