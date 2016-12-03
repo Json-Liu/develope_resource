@@ -46,8 +46,27 @@ MYSQL 开发常用命令集锦
 > > Exp: select * from test \G  
 
 
+连接数据库
+-----------------------
+* 直连
+>
+> > 1. mysql -h{host} -P{port} -u{user_name} -p{password} -D{db_name}
+> > 2. mysql -h{host} -P{port} -u{user_name} -p  按 enter 后 输入密码 -> use {db_name} 
+> > 第二种方法的好处是可以防止密码泄漏
 
-
-
-
-
+导入/导出数据
+---------------------
+* 未连接数据库的情况下从外部 SQL 脚本导入
+>
+> > mysql -h {host} -u {user_name} -p {password} < {absolute_filepath}
+>
+>
+* 已连接数据的情况下导入数据,此时命令提示符为 mysql>
+>
+> > source {absolute_filepath}
+>
+>
+* 根据 SQL 语句将查询结果导出到指定路径
+>
+> > mysql -u {user_name} -p {password} -h {host} -P {port}  {db_name} -N -e {sql_str} > {absolute_filepath}
+>
