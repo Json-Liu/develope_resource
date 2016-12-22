@@ -74,3 +74,18 @@ MYSQL 开发常用命令集锦
 >
 > > mysql -u {user_name} -p {password} -h {host} -P {port}  {db_name} -N -e {sql_str} > {absolute_filepath}
 >
+
+* case when 语句的使用
+
+Exp:
+<pre>
+    select 
+       ( case sex when 1 then '男生' when 2 then '女生' else '人妖' end ) as sex 
+    from user
+</pre>
+<pre>
+    select 
+       sum( case when sex = 1 then 1 else 0 end ) as '男生人数',
+       sum( case when sex = 0 then 1 else 0 end ) as '女生人数'
+    from user
+</pre>
