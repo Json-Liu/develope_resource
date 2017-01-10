@@ -1,3 +1,17 @@
+UBANTU安装常用软件
+---------------------
+
+###安装JAVA
+<pre>
+1.添加PPA中的 JAVA 镜像
+	sudo add-apt-repository ppa:webupd8team/java
+2.更新软件库
+	sudo apt-get update
+3.安装JAVA
+	安装JAVA7：sudo apt-get install oracle-java7-installer
+	安装JAVA8: sudo apt-get install oracle-java8-installer
+</pre>
+
 ###安装Sublime text 3
 <pre>
 1.添加PPA中 sublime text3仓库
