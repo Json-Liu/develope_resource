@@ -48,3 +48,14 @@ UBANTU安装常用软件
 3.在BIN目录下运行 .sh 命令
 4.激活网址 ： http://idea.iteblog.com/ 打开激活界面 在这个激活网址上生成激活码 然后粘贴即可。
 </pre>
+
+###安装 Eclipse
+<pre>
+	1.下载Eclipse 安装器
+		下载链接：http://www.eclipse.org/downloads/
+		根据自己的系统类型选择对应的版本进行下载
+	2.解压并运行其中的 eclipse-inst
+		tar zxvf eclipse-inst-linux64.tar.gz
+		cd eclipse-installer
+		./eclipse-inst
+</pre>
