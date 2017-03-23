@@ -2,13 +2,13 @@
 Btrace使用教程
 ---
 
-###下载
+### 下载
 
 <pre>
 	下载链接：https://github.com/btraceio/btrace/releases/tag/v1.3.9
 </pre>
 
-###安装及环境配置
+### 安装及环境配置
 
 <pre>
 	1.下载一个压缩包
@@ -17,7 +17,7 @@ Btrace使用教程
 	4.使配置生效  source /etc/profile  这样就可以在任何地方使用 btrace 命令了
 </pre>
 
-###BTrace简介及使用须知
+### BTrace简介及使用须知
 
 <pre>
 	BTrace是一个可以对 JAVA 进行安全、动态追踪的工具。为了保证在追踪动作的只读性，追踪动作不能改变程序的状态。一般来说 BTrace 具体有以下限制（禁令）：
@@ -33,7 +33,7 @@ Btrace使用教程
 	其实就是一句话 只使用 println() 方法进行打印信息就好 哈哈
 </pre>
 
-###使用方法
+### 使用方法
 
 <pre>
 	1.找到要监控的 JVM进程 PID 
@@ -47,7 +47,7 @@ Btrace使用教程
 	4.BTrace脚本在进程重启后会失效。
 </pre>
 
-###使用场景
+### 使用场景
 
 <pre>
 	1.查看某一个方法中入参
@@ -57,7 +57,7 @@ Btrace使用教程
 	5.查看谁调用了 System.gc(),及其对应的调用栈
 </pre>
 
-###实战DEMO
+### 实战DEMO
 
 <pre>
 1.监控指定方法的耗时
