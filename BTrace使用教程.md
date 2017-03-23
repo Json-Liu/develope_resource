@@ -1,16 +1,23 @@
+
 ##Btrace使用教程
+
 ###下载
+
 <pre>
 	下载链接：https://github.com/btraceio/btrace/releases/tag/v1.3.9
 </pre>
+
 ###安装及环境配置
+
 <pre>
 	1.下载一个压缩包
 	2.解压
 	3.配置环境变量 sudo vi /etc/profile 添加   export BTRACE_HOME=/home/josonliu/btrace     export PATH=$PATH:$BTRACE_HOME/bin PS:BTRACE_HOME必须是你解压的路径
 	4.使配置生效  source /etc/profile  这样就可以在任何地方使用 btrace 命令了
 </pre>
+
 ###BTrace简介及使用须知
+
 <pre>
 	BTrace是一个可以对 JAVA 进行安全、动态追踪的工具。为了保证在追踪动作的只读性，追踪动作不能改变程序的状态。一般来说 BTrace 具体有以下限制（禁令）：
 	1.不准创建新对象！
@@ -24,7 +31,9 @@
 	9.不准使用循环
 	其实就是一句话 只使用 println() 方法进行打印信息就好 哈哈
 </pre>
+
 ###使用方法
+
 <pre>
 	1.找到要监控的 JVM进程 PID 
 		a.通过 top -c 命令找到
@@ -36,7 +45,9 @@
 	3.如需修改监控只需要停止运行后 修改脚本 然后运行脚本即可。
 	4.BTrace脚本在进程重启后会失效。
 </pre>
+
 ###使用场景
+
 <pre>
 	1.查看某一个方法中入参
 	2.查看某一个方法的响应时间
@@ -44,7 +55,9 @@
 	4.查看谁构造了一个超大的 ArrayList
 	5.查看谁调用了 System.gc(),及其对应的调用栈
 </pre>
+
 ###实战DEMO
+
 <pre>
 1.监控指定方法的耗时
 	import com.sun.btrace.annotations.*;
